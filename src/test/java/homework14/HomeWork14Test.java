@@ -39,11 +39,12 @@ public class HomeWork14Test {
         ArrayList<Integer> arrIntValid04 = new ArrayList<>();
         Assert.assertEquals(arrTest04, arrIntValid04);
     }
+
     /**
      * Тестирование HomeWork14.arrayPresenc1or4
      */
     @Test
-    public void arrayPresenc1or4(){
+    public void arrayPresenc1or4() {
         // Создание тестовых массивов
         int[] arrinttest01 = new int[]{1, 1, 1, 4, 4, 1, 4, 4};
         int[] arrinttest02 = new int[]{1, 1, 1, 1, 1, 1};
@@ -51,25 +52,25 @@ public class HomeWork14Test {
         int[] arrinttest04 = new int[]{1, 4, 4, 1, 1, 4, 3};
 
         // Валидные результаты
-        boolean boValid01=true;
-        boolean boValid02=false;
-        boolean boValid03=false;
-        boolean boValid04=false;
+        boolean boValid01 = true;
+        boolean boValid02 = false;
+        boolean boValid03 = false;
+        boolean boValid04 = false;
 
         // тест1
-        boolean boTest01=HomeWork14.arrayPresenc1or4(arrinttest01);
+        boolean boTest01 = HomeWork14.arrayPresenc1or4(arrinttest01);
         Assert.assertEquals(boTest01, boValid01);
 
         // тест2
-        boolean boTest02=HomeWork14.arrayPresenc1or4(arrinttest02);
+        boolean boTest02 = HomeWork14.arrayPresenc1or4(arrinttest02);
         Assert.assertEquals(boTest02, boValid02);
 
         // тест3
-        boolean boTest03=HomeWork14.arrayPresenc1or4(arrinttest03);
+        boolean boTest03 = HomeWork14.arrayPresenc1or4(arrinttest03);
         Assert.assertEquals(boTest03, boValid03);
 
         // тест4
-        boolean boTest04=HomeWork14.arrayPresenc1or4(arrinttest04);
+        boolean boTest04 = HomeWork14.arrayPresenc1or4(arrinttest04);
         Assert.assertEquals(boTest04, boValid04);
     }
 
